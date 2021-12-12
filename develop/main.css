@@ -34,6 +34,15 @@ body {
     box-shadow: 0 4px 6px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 10%);
 }
 
+.timer {
+    display: flex;
+    text-align: right;
+    font-weight: 200;
+    font-size: 1.0rem;
+    user-select: none;
+}
+
+
 .quiz-title {
     text-align: center;
     font-size: 2rem;
@@ -109,10 +118,28 @@ body {
     display: none;
 }
 
+#save {
+    display: none;
+}
+
 /* results styling */
+#results {
+    padding: .7rem 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
 
-
-
+#result i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    background-color: rgb(174, 113, 192);
+    color: white;
+}
 
 
 

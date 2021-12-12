@@ -21,32 +21,40 @@
                 <div class="quiz-head">
                     <h1 class="quiz-title">JavaScript Quiz</h1>
                     <div class="quiz-score flex">
-                        <span id="correct-score">0</span>/<span id="total-question">20</span>
+                        <span id="correct-score">0</span>/<span id="total-question">10</span>
                     </div>
                 </div>
 
                 <div class = "quiz-body">
-                    <h2 class="quiz-question" id= "question">How do you create a function in JavaScript? <br></h2>
+                    <h2 class="quiz-question" id="question">? <br> </h2>
                     <ul class = "quiz-options">
-                        <li>1. myFunction()</li>
-                        <li>2. call myFunction()</li>
-                        <li>3. call function myFunction()</li>
-                        <li>4. call myFunction=</li>
+                        <li id="option1">1.</li>
+                        <li id="option2">2.</li>
+                        <li id="option3">3.</li>
+                        <li id="option4">4.</li>
                     </ul>
-                    <div id="result">
-                        <!-- result here -->
-                    </div>
                 </div>
 
                 <div class = "quiz-foot">
-                    <button type="button" id="check-answer">Check Answer</button>
+                    <button type="button" id="next">Next Question</button>
+                    <button type="button" id="save">Save Score</button> 
                     <button type="button" id="try-again">Try Again!</button>
+                </div>
+
+                <div id="results">
+                    <h2 id="high-score"></h2>
+                    <h2 id="initals"></h2>
+                </div>
+
+                <div class="timer">
+                    <div id="time-text">Time:</div>
+                    <div id="timer-sec">00</div> <br>
                 </div>
             </div>
         </div>
 
 
         <!-- code quiz js -->
-        <script src="develop/script.js"></script>
+        <script src="develop/script.js" src="develop/questions.js"></script>
     </body>
 </html>
