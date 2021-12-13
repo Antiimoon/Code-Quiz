@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
         <!-- custom css -->
         <link rel="stylesheet" href="develop/main.css">
 
@@ -26,12 +28,12 @@
                 </div>
 
                 <div class = "quiz-body">
-                    <h2 class="quiz-question" id="question">? <br> </h2>
+                    <h2 class="quiz-question" id="question"> How do you create a function in JavaScript?<br> </h2>
                     <ul class = "quiz-options">
-                        <li id="option1">1.</li>
-                        <li id="option2">2.</li>
-                        <li id="option3">3.</li>
-                        <li id="option4">4.</li>
+                        <li class="choices" id="option1">1. function myFunction()</li>
+                        <li class="choices" id="option2">2. function:myFunction()</li>
+                        <li class="choices" id="option3">3. function = myFunction()</li>
+                        <li class="choices" id="option4">4. myFunction=</li>
                     </ul>
                 </div>
 
@@ -55,6 +57,7 @@
 
 
         <!-- code quiz js -->
-        <script src="develop/script.js" src="develop/questions.js"></script>
+        <script type=”text/javascript” src="develop/questions.js" async></script>
+        <script src="develop/script.js"></script>
     </body>
 </html>

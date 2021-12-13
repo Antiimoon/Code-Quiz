@@ -88,6 +88,10 @@ body {
     border-color: lightgrey;
 }
 
+.quiz-options .disabled {
+    pointer-events: none;
+}
+
 .selected {
     background-color: lightgrey!important;
     color: black!important;
