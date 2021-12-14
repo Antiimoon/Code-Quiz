@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Code Quiz</title>
 
@@ -23,41 +22,33 @@
                 <div class="quiz-head">
                     <h1 class="quiz-title">JavaScript Quiz</h1>
                     <div class="quiz-score flex">
-                        <span id="correct-score">0</span>/<span id="total-question">10</span>
+                        <p id="progress">0/10</p> <br>
                     </div>
                 </div>
 
                 <div class = "quiz-body">
-                    <h2 class="quiz-question" id="question"> How do you create a function in JavaScript?<br> </h2>
-                    <ul class = "quiz-options">
-                        <li class="choices" id="option1">1. function myFunction()</li>
-                        <li class="choices" id="option2">2. function:myFunction()</li>
-                        <li class="choices" id="option3">3. function = myFunction()</li>
-                        <li class="choices" id="option4">4. myFunction=</li>
-                    </ul>
+                    <h2 class="quiz-question" id="question"> <br> </h2>
+                    <div class = "quiz-options">
+                        <li><button class="btn" id="btn0">
+                            1. <span id="choice0"></span></button>
+                        </li>
+                        <li><button class="btn" id="btn1">
+                            2. <span id="choice1"></span></button>
+                        </li>
+                        <li><button class="btn" id="btn2">
+                            3. <span id="choice2"></span></button>
+                        </li>
+                        <li><button class="btn" id="btn3">
+                            4. <span id="choice3"></span></button>
+                        </li>
+                    </div>
                 </div>
 
-                <div class = "quiz-foot">
-                    <button type="button" id="next">Next Question</button>
-                    <button type="button" id="save">Save Score</button> 
-                    <button type="button" id="try-again">Try Again!</button>
-                </div>
-
-                <div id="results">
-                    <h2 id="high-score"></h2>
-                    <h2 id="initals"></h2>
-                </div>
-
-                <div class="timer">
-                    <div id="time-text">Time:</div>
-                    <div id="timer-sec">00</div> <br>
-                </div>
+                <p id="count-down">00</p>
             </div>
         </div>
 
-
         <!-- code quiz js -->
-        <script type=”text/javascript” src="develop/questions.js" async></script>
         <script src="develop/script.js"></script>
     </body>
 </html>
