@@ -28,22 +28,24 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 }
+
 
 .start-btn button {
     font-size: 25px;
     font-weight: 500;
-    color: lightgrey;
+    color: white;
     padding: 15px 30px;
     outline: none;
     border: none;
     border-radius: 5px;
     background: rgb(174, 113, 192);
     cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2) 0px 6px 20px 0 rgb(0, 0, 0, 0.19);
+    transform: translate(-50%, -50%) scale(1.3);
 }
 
-.start-btn:hover {
+.start-btn button:hover {
     background-color: lightgrey;
     color: black;
     border-color: lightgrey;
@@ -68,10 +70,16 @@ body {
     user-select: none;
 }
 
-
 .quiz-title {
     text-align: center;
     font-size: 2rem;
+}
+
+.quiz-conatiner.activeInfo {
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(0.0);
 }
 
 .quiz-score {
@@ -173,6 +181,9 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(5);
 }
 
 .results-box .score {

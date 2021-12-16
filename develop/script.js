@@ -1,3 +1,11 @@
+const start_btn = document.querySelector(".start-btn");
+const quiz_conatiner = document.querySelector(".quiz-conatiner");
+
+start_btn.onclick = () => {
+    quiz_body.classList.add("activeInfo");
+}
+
+
 class Quiz {
     constructor(questions) {
         this.score = 0;
@@ -121,7 +129,7 @@ let quiz = new Quiz(questions);
 displayQuestion();
 
 // Add a countdown
-let time = 5;
+let time = 1;
 let quizTimeInMinutes = time * 60 * 60;
 quizTime = quizTimeInMinutes / 60;
 
@@ -143,11 +151,3 @@ function startCountdown() {
 
 startCountdown();
 
-function restartQuiz() {
-    correctScore = askedCount = 0;
-    _tryAgainBtn.style.display = "none";
-    _nextBtn.style.display = "block";
-    _nextBtn.disabled = false;
-    setCount();
-    loadQuestion();
-}
