@@ -16,13 +16,15 @@
 
     </head>
     <body class="flex">
+        <!-- start quiz button -->
+        <div class="start-btn"><button>Start</button></div>
 
         <div class="wrapper">
             <div class="quiz-container">
                 <div class="quiz-head">
                     <h1 class="quiz-title">JavaScript Quiz</h1>
                     <div class="quiz-score flex">
-                        <p id="progress">0/10</p> <br>
+                        <p id="progress">0/10√</p> <br>
                     </div>
                 </div>
 
@@ -43,8 +45,19 @@
                         </li>
                     </div>
                 </div>
+                <p id="count-down"></p>
+            </div>
+        </div>
 
-                <p id="count-down">00</p>
+        <div class="results-box">
+            <i class="fab fa-sketch"></i>
+            <div class="score">
+                <span>Your Score is <p>0</p> out of <p>10</p></span>
+            </div>
+            <div class="buttons">
+                <button class="save">Save Score</button> 
+               <button class="restart">Try Again</button> 
+               <button class="quit">Quit Quiz</button> 
             </div>
         </div>
 

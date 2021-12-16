@@ -121,7 +121,7 @@ let quiz = new Quiz(questions);
 displayQuestion();
 
 // Add a countdown
-let time = 2;
+let time = 5;
 let quizTimeInMinutes = time * 60 * 60;
 quizTime = quizTimeInMinutes / 60;
 
@@ -142,3 +142,12 @@ function startCountdown() {
 }
 
 startCountdown();
+
+function restartQuiz() {
+    correctScore = askedCount = 0;
+    _tryAgainBtn.style.display = "none";
+    _nextBtn.style.display = "block";
+    _nextBtn.disabled = false;
+    setCount();
+    loadQuestion();
+}
